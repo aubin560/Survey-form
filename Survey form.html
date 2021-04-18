@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Survey form</title></head>
+    <link href="survey form.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family= Kiwi Maru" rel="stylesheet" type="text/css">
+   
+    <body>
+        <div class="container">
+        <header>
+            <h1  id="title">Student Survey form</h1>
+            <h3 id="description">Thank you in advance for filling this survey</h3>
+        </header>
+        <form id="survey-form">
+            <div id="form-items">
+            
+            <label for="name" id="name-label">Name</label><br><br>
+            <input id="name" type="text" name="name" placeholder="Enter your name" required  class="form-input"><br><br>
+            <label for="email" id="email-label">Email</label><br><br>
+            <input id="email" name="email" type="email" required placeholder="Enter your Email" required class="form-input"><br><br>
+            <label for="number" id="number-label">Age between 18 and 25 old</label><br><br>
+            <input id="number" type="number" placeholder="Age" class="form-input" min="18" max="25" class="age-input"><br><br>
+            <label for="dept">Department</label><br><br>
+            <select id="dept" name="dept" class="form-dept">
+                <option disabled selected value>Select a department</option>
+                <option value="cs">Computer Science</option>
+                <option value="eco">Economics</option>
+                <option value="ls">Land Survey</option>
+                <option value="fin">Finance</option>
+                <option value="Acc">Accounting</option>
+            </select>
+            <p>Which sport do you exercise?</p>
+            <label for="soccer" class="target2">
+            <input id="soccer" name="sport" value="soccer" type="radio">Soccer
+            </label>
+            <label for="tennis" class="target2">
+                <input id="tennis" name="sport" value="tennis" type="radio" >Tennis
+            </label>
+            <label for="baseball" class="target2">
+                <input id="baseball" name="sport" value="baseball" type="radio">Baseball
+            </label>
+            <label for="golf" class="target2">
+                <input id="golf" name="sport" value="golf" type="radio">Golf
+            </label>
+            <label for="Basketball" class="target2">
+                <input id="Basketball" name="sport" value="Basketball" type="radio">Basketball
+            </label>
+
+            <p>How did hear about the university?</p>
+            <label for="friends" class="target2">
+            <input id="friend" name="source of information" value="freind" type="checkbox">Friends
+            </label>
+            <label for="sm" class="target2">
+                <input id="sm" name="source of information" value="social media" type="checkbox" >Social medias
+            </label>
+            <label for="adv" class="target2">
+                <input id="baseball" name="source of information" value="advertisment compaign" type="checkbox">Advertisment compaign
+            </label>
+            <label for="tv" class="target2">
+                <input id="tv" name="source of information" value="television show" type="checkbox">Television 
+            </label>
+            <label for="other source" class="target2">
+                <input id="other source" name="source of information" value="other source" type="checkbox">Other source
+            </label><br><br>
+            <div class="form-textarea">
+            What was your first impression about the university?<br><br>
+            <textarea id="comments" class="input-textarea" name="comment"
+        placeholder="Enter your comment here..."></textarea>
+            </div> 
+            <div class="form-submission">
+                <button type="submit" id="submit">Submit</button> 
+            </div>
+      
+        </div>
+        </form>
+        </div>
+    </div>
+    </body>
+</html>

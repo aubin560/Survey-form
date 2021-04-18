@@ -1,0 +1,151 @@
+body{
+    background-image: url(https://pbs.twimg.com/profile_images/1263584750255525888/moMjnJdT_400x400.jpg);
+    background-size: 25%;
+    /* height: auto; */
+    font-size: 25px;
+    overflow-x: hidden;
+    
+}
+ header{
+    text-align: center;
+    color: white;
+    position: relative;
+    animation-name: header;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+
+ }
+@keyframes header{
+    0%{top:-150px;}
+    100%{top:5px}
+}
+   
+.container{
+    background-color: black;
+    opacity: 0.9 ;
+    margin: -50px -50px -50px -50px;
+    padding: 50px;
+    height: 100%;
+}
+
+#survey-form{
+    border: solid black 1px;
+    margin: 0 auto;
+    width: 800px;
+    padding: 10px;
+    background-color: #1b1b32;
+    /* opacity: 0.8; */
+    color: white;
+    /* font-family:  Kiwi Maru; */
+    font-family:  sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    position:relative;
+    animation-name: survey-form;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes survey-form{
+    0%{left:-1000px}
+    100%{left: 0px}
+}
+#title{
+    font-family: Lobster;
+}
+input {
+    padding: 7px;
+    
+}
+input:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+select{
+    padding: 7px;
+}
+.input-textarea{
+    width: 450px;
+    height: 155px;
+}
+#age-input{
+    width: 400px;
+}
+#submit{
+    padding: 7px;
+    width: 125px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    opacity: 15;
+    transition-duration: 1000ms;
+    transition-property: background-color, boder-radius;
+}
+.form-dept{
+    width: 185px ;
+}
+#submit:hover{
+    
+    background-color: dimgrey;
+    border-radius: 10px;
+}
+label{
+    line-height: 10px;
+    padding: 5px;
+   
+}
+.target2{
+    margin-left: -15px;
+    padding: 10px;
+}
+
+@media screen and (max-width:850px){
+    #survey-form{
+        width: 700px
+    }
+    header{
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .input-textarea{
+        max-width: 90%;
+    }
+    .target2{
+        display: block;
+    }
+}
+@media screen and (max-width:800px){
+    #survey-form{
+        width: 600px;
+        
+    }
+    .input-textarea{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:650px){
+    #survey-form{
+        width: 450px
+    }
+    .input-textarea{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:490px){
+    #survey-form{
+        width: 400px
+    }
+    .input-textarea{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:400px){
+    #survey-form{
+        width: 200px
+    }
+    .input-textarea{
+        max-width: 90%;
+    }
+}
+
+
